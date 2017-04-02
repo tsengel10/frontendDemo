@@ -1,0 +1,9 @@
+{
+  "fake": {
+    "ORIGIN": "http://localhost:8090",
+    "BASE_URL": "/demo/#",
+    "API_URL": {
+      "groups": "/groups"
+    }
+  }
+}

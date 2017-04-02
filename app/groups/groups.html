@@ -1,0 +1,18 @@
+<div class="groups">
+    <h1>Demo groups</h1>
+    <div>
+        <a ng-click="vm.loadMyGroups()">Click here to load groups</a>
+        <div ng-if="vm.isLoading">loading...</div>
+    </div>
+    <div ng-if="vm.showGroups()"><span>List of groups</span>
+        <ul ng-repeat="group in vm.groups">
+            <li>{{ group.groupName }} --  <a ng-click="vm.showDetail(group)">See details...</a></li> 
+        </ul>
+    </div>
+
+    <div ng-if="vm.showGroupDetail()"><span>Group Detail</span>
+        <p>Group ID: {{ vm.group.groupId }}</p>
+        <p>Group name: {{ vm.group.groupName }}</p>
+        <p>Group Code: {{ vm.group.groupCode }}</p>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+logs/*
+!.gitkeep
+node_modules/
+tmp
+.DS_Store
+.idea
+public/
+typings/
+build/
+npm-debug.log
